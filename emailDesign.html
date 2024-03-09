@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>""" + title + """</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 600px;
+                margin: 20px auto; /* Added margin to center the container */
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border: 2px solid #ccc; /* Border added */
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .button {
+                display: inline-block;
+                background-color: #ff0000; /* Red background */
+                color: #ffffff !important; /* White text color */
+                text-decoration: none;
+                padding: 12px 24px;
+                border-radius: 6px;
+                border: none;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+            }
+            .button:hover {
+                background-color: #cc0000; /* Darker shade of red on hover */
+            }
+            .button a {
+                color: #ffffff !important; /* White text color for the anchor element */
+                text-decoration: none !important; /* Remove underline */
+            }
+            h1 {
+                font-size: 24px;
+                color: #333333;
+                margin: 0 0 20px;
+            }
+            p {
+                font-size: 16px;
+                color: #666666;
+                line-height: 1.6;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>""" + title + """</h1>
+            </div>
+            <div class="content">
+                <p>We think this post might interest you. Check it out!</p>
+                <p>Written by """ + author + """ on """ + creation + """</p>
+                <p>""" + upvote + """ others liked the post!</p>
+                <p>The post has a score of """ + score + """</p>
+                <p>""" + comments + """ comments have been made. Join the conversation!</p>
+                <p></p>
+                <p><a href=""" + reddit_post_url + """ class="button">Read Post</a></p>
+            </div>
+        </div>
+    </body>
+    </html>
